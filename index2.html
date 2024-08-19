@@ -3,18 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log In</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Sign Up</title>
   </head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="/assets/css/style2.css" />
   <body>
-    <!-- NAV BAR SECTION -->
-    <!-- navigation bar -->
+    <!--Navigation Bar  -->
     <div class="container first-div pt-5">
       <nav
         class="navbar sticky-top rounded-pill navbarrr navbar-expand-lg bg-body-tertiary bg-light"
@@ -77,17 +76,78 @@
         </div>
       </nav>
     </div>
-    <!--END OF NAV BAR SECTION -->
 
-    <!-- LOG IN SECTION -->
+    <!-- End Of Navigation Bar  -->
+
+    <!-- Sign Up Section -->
     <div class="container second-div col-lg-6 col-md-6">
-      <div class="py-5 my-5 text-center rounded-3" id="login-container">
-        <h1>Log in to your account</h1>
-        <p>Welcome back! select method to log in:</p>
+      <div class="py-5 my-5 rounded-3" id="signup-container">
+        <div class="text-center">
+          <h1>Sign-up</h1>
+          <p>Kindly fill in the form below correctly.</p>
+        </div>
         <div class="col-lg-6 mx-auto">
-          <!-- Google and fb buttons -->
-          <div class="px-4">
-            <div class="gap-4 d-grid d-flex justify-content-center py-3">
+          <!-- form -->
+          <form action="">
+            <div class="px-4">
+              <label for="first-name" id="name-label">First Name</label>
+              <div class="input-group mb-3" id="logins">
+                <span class="input-group-text" id="basic-addon1"
+                  ><img src="/assets/img/elements.png" alt=""
+                /></span>
+                <input
+                  type="text"
+                  class="form-control logins"
+                  placeholder="Enter First Name"
+                  name="first-name"
+                />
+              </div>
+              <label for="last-name" id="name-label">Last Name</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                  ><img src="/assets/img/elements.png" alt=""
+                /></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Last Name"
+                  name="last-name"
+                />
+              </div>
+              <label for="other-names" id="name-label">Other Names</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                  ><img src="/assets/img/elements.png" alt=""
+                /></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="chukwuka"
+                  name="other-names"
+                />
+              </div>
+              <a href="#" class="btn w-100 mt-2" id="login-btn">Next</a>
+            </div>
+          </form>
+          <!-- End Of form -->
+          <!-- Or With -->
+          <div class="container mt-1">
+            <div class="row justify-content-center">
+              <div class="col-lg-12 col-md-9 col-sm-6 text-center">
+                <div class="row mx-3 mb-4">
+                  <div class="line"></div>
+                  <small class="or">or with</small>
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--End Of Or With -->
+
+          <!-- google and fb buttons -->
+          <div class="px-4 py-1">
+            <div class="gap-4 d-grid d-flex justify-content-center">
               <button
                 type="button"
                 class="btn btn-lg px-4 buttt"
@@ -98,93 +158,26 @@
                   alt=""
                 /><span>Google</span>
               </button>
-              <button type="button" class="btn btn-lg px-4" id="facebook-btn">
+              <button type="button" class="btn btn-lg px-3" id="facebook-btn">
                 <img src="/assets/img/Vector (2).png" alt="" /><span
                   >Facebook</span
                 >
               </button>
             </div>
           </div>
-          <!-- Google and fb buttons -->
-          <!-- or with break -->
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-12 col-md-9 col-sm-6 text-center">
-                <div class="row mx-3 mb-4">
-                  <div class="line"></div>
-                  <small class="or">or continue with email</small>
-                  <div class="line"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!--End of google and fb buttons -->
 
-          <!--end of or with break -->
-          <!-- form -->
-          <form action="">
-            <div class="px-4">
-              <div class="input-group mb-3" id="logins">
-                <span class="input-group-text" id="basic-addon1"
-                  ><img src="/assets/img/sms.png" alt=""
-                /></span>
-                <input
-                  type="email"
-                  class="form-control logins"
-                  placeholder="Email"
-                />
-              </div>
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1"
-                  ><img src="/assets/img/lock.png" alt=""
-                /></span>
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Password"
-                />
-              </div>
-              <div
-                class="d-flex align-items-center justify-content-between py-3"
-              >
-                <div
-                  class="gap-2 d-flex align-items-center justify-content-center"
-                >
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <label
-                    class="form-check-label pt-1"
-                    for="flexCheckDefault"
-                    id="remember-me"
-                    style="font-weight: 500; cursor: pointer"
-                  >
-                    Remember me
-                  </label>
-                </div>
-                <div>
-                  <a href="#" id="forgot-password" style="font-weight: 500"
-                    >Forgot Password</a
-                  >
-                </div>
-              </div>
-              <a href="#" class="btn btn-primary w-100" id="login-btn">Login</a>
-            </div>
-          </form>
-          <!-- End Of form -->
-           <!-- buttom text -->
-             <div class="pt-2" id="buttom-text">
+          <!-- buttom text -->
+            <div class="mt-3 text-center" id="buttom-text">
             <p>
-              Don’t have an account?<span> <a href="#">Create one</a> </span>
+              Already have an account? <span> <a href="#">Login</a> </span>
             </p>
           </div>
-           <!-- end of buttom text -->
+          <!-- end of buttom text -->
         </div>
       </div>
     </div>
-    <!-- END OF LOG IN SECTION -->
+    <!--End Of Sign Up Section -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -193,3 +186,8 @@
     ></script>
   </body>
 </html>
+<div class="pt-2" id="buttom-text">
+  <p>
+    Don’t have an account?<span> <a href="#">Create one</a> </span>
+  </p>
+</div>
